@@ -40,6 +40,7 @@ $header-height: 110px;
   display: inline-block;
   list-style: none;
   padding: 0;
+  margin: 0;
   float: right;
   height: $header-height;
 }
@@ -47,11 +48,11 @@ $header-height: 110px;
 .header-nav-item {
   display: inline-block;
   line-height: $header-height;
-  margin-left: 25px;
+  margin-left: 28px;
 
   i {
     font-size: 35px;
-    color: white;
+    color: #ffffff;
     transition: color 0.15s ease-in-out;
     transition-property: color;
     transition-duration: 0.15s;
@@ -65,7 +66,59 @@ $header-height: 110px;
       transition-duration: 0.15s;
       transition-timing-function: ease-in-out;
       transition-delay: initial;
-;
+
     }
   }
+}
+
+
+// Sub Header Style
+$sub-head-height: 65px;
+
+.sub-head-outer {
+  height: $sub-head-height;
+  background-color: $delta-blue;
+}
+
+.sub-head-inner {
+  height: $sub-head-height;
+}
+
+.sub-nav {
+  height: $sub-head-height;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.sub-nav-item {
+  height: $sub-head-height;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 89, 184, 0);
+  transition: background-color 0.25s ease-in-out;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial;
+
+  &:hover {
+    background-color: rgba(0, 89, 184, 1);
+    transition: background-color 0.25s ease-in-out;
+    transition-property: background-color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+  }
+
+  h3 {
+    color: #ffffff;
+  }
+
+  // a {
+  //   display: inline-block;
+  //   line-height: $sub-head-height;
+  //   color: #ffffff;
+  //   text-decoration: none;
+  // }
 }
