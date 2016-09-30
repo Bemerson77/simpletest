@@ -114,11 +114,22 @@ $sub-head-height: 65px;
   h3 {
     color: #ffffff;
   }
+}
 
-  // a {
-  //   display: inline-block;
-  //   line-height: $sub-head-height;
-  //   color: #ffffff;
-  //   text-decoration: none;
-  // }
+// Page Body Styles
+
+
+.page-body-outer {
+  background: url('../images/header-img.jpg') center center;
+  background-size: cover;
+  height: 700px;
+}
+
+.hero-title {
+  text-align: center;
+  color: #ffffff;
+
+  h1 {
+    margin: 0;
+  }
 }
