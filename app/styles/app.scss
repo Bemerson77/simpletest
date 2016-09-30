@@ -123,7 +123,6 @@ $sub-head-height: 65px;
 }
 
 .product-menu {
-  height: 240px;
   visibility: hidden;
   position: relative;
   top: 9px;
@@ -140,10 +139,11 @@ $sub-head-height: 65px;
   height: 60px;
   border-bottom: 1px solid rgba(183, 183, 183, 1);
   transition: background-color 0.3s, border-bottom 0.3s ease-in-out;
-  transition-property: background-color;
+  transition-property: background-color, border-bottom;
   transition-duration: 0.3s, 0.3s;
   transition-timing-function: ease-in-out;
   transition-delay: initial;
+
   span {
     color: $delta-blue;
     font-size: 20px;
@@ -159,7 +159,7 @@ $sub-head-height: 65px;
     background-color: $delta-blue;
     border-bottom: none;
     transition: background-color 0.3s, border-bottom 0.3s ease-in-out;
-    transition-property: background-color;
+    transition-property: background-color, border-bottom;
     transition-duration: 0.3s, 0.3s;
     transition-timing-function: ease-in-out;
     transition-delay: initial;
