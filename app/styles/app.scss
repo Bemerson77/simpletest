@@ -116,20 +116,96 @@ $sub-head-height: 65px;
   }
 }
 
-// Page Body Styles
+// Products Menu
 
-
-.page-body-outer {
-  background: url('../images/header-img.jpg') center center;
-  background-size: cover;
-  height: 700px;
+.product-menu-wrapper {
+  padding: 0;
 }
 
-.hero-title {
+.product-menu {
+  position: relative;
+  z-index: 100px;
+}
+
+// Banner Styles
+
+
+.banner-outer {
+  background: url('../images/header-img.jpg') center center;
+  background-size: cover;
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 750px;
+}
+
+.banner-outer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0, 0.3);
+}
+
+.banner-inner {
+  position: relative;
+  top: 10%;
+}
+
+.banner-title {
   text-align: center;
   color: #ffffff;
 
   h1 {
+    font-size: 65px;
+    font-weight: 300;
+    letter-spacing: 6px;
     margin: 0;
+  }
+}
+
+.banner-sub {
+  padding: 0 20%;
+  margin-top: 50px;
+
+  p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    color: #ffffff;
+  }
+}
+
+.banner-btn-wrapper {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#banner-btn {
+  font-weight: 200;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: white;
+  background-color: $delta-blue;
+  border: none;
+  border-radius: 0;
+  width: 260px;
+  height: 68px;
+  transition: background-color 0.25s ease-in-out;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial;
+
+  &:hover {
+    background-color: rgba(0,0,0, 0);
+    border: 2px solid #ffffff;
+    transition: background-color 0.25s, border 0.25s ease-in-out;
+    transition-property: background-color, border;
+    transition-duration: 0.25s 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial, initial;
   }
 }
