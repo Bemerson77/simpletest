@@ -16,9 +16,11 @@ img {
   max-width: 100%;
 }
 
+// Global Variables
+$delta-blue: rgba(4, 84, 165, 1);
 
 // Header Style
-$header-height: 108px;
+$header-height: 110px;
 
 .header-outer {
   background-color: rgba(16, 16, 16, 1);
@@ -32,4 +34,38 @@ $header-height: 108px;
 .delta-logo-wrapper {
   display: inline-block;
   line-height: $header-height;
+}
+
+.header-nav {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  float: right;
+  height: $header-height;
+}
+
+.header-nav-item {
+  display: inline-block;
+  line-height: $header-height;
+  margin-left: 25px;
+
+  i {
+    font-size: 35px;
+    color: white;
+    transition: color 0.15s ease-in-out;
+    transition-property: color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+
+    &:hover {
+      color: $delta-blue;
+      transition: color 0.15s ease-in-out;
+      transition-property: color;
+      transition-duration: 0.15s;
+      transition-timing-function: ease-in-out;
+      transition-delay: initial;
+;
+    }
+  }
 }
